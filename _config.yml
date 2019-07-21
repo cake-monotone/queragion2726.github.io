@@ -2,7 +2,7 @@
 title: 'Monotone Cake '
 description: 'your web description'
 keywords: 'your web keywords, another keywords'
-url: 'mono-cake.coffee' # your host
+url: 'https://mono-cake.coffee' # your host
 
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
