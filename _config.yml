@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'Monotone Cake '
+title: 'mono cake and coffee '
 description: 'your web description'
 keywords: 'your web keywords, another keywords'
 url: 'https://mono-cake.coffee' # your host
@@ -15,7 +15,7 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 author: true
 name: 'queragion2726'
 NickName: '흑백 케이크'
-webtitle: 'mono-cake store'
+webtitle: 'mono-cake & coffee'
 bio: 'your awesome bio'
 about: true
 aboutyou: 'your introduction'
