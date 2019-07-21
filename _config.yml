@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: 'mono cake and coffee '
-description: 'your web description'
-keywords: 'your web keywords, another keywords'
+description: 'not cake and coffee blog.. just blog about Programming and Mathmatics'
+keywords: 'PS, Programming, Math, Mathmatics'
 url: 'https://mono-cake.coffee' # your host
 
 # nav 中文字符空格：&emsp;
@@ -16,9 +16,9 @@ author: true
 name: 'queragion2726'
 NickName: '흑백 케이크'
 webtitle: 'mono-cake & coffee'
-bio: 'your awesome bio'
+bio: 'bio'
 about: true
-aboutyou: 'your introduction'
+aboutyou: 'introduction'
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
@@ -33,7 +33,7 @@ paginatepath: ['page:num']
 
 # since
 footer:
-  since: 2018
+  since: 2019
 
 # Markdown
 markdown: kramdown
