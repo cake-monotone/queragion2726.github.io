@@ -1,0 +1,9 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="32" height="32"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <rect x="2" y="11" rx="1" ry="1" width="7" height="18" stroke="#F7E600" fill="#F7E600"/>
+    <rect x="12" y="3" rx="1" ry="1" width="7" height="26" stroke="#779ecb" fill="#779ecb"/>
+    <rect x="22" y="16" rx="1" ry="1" width="7" height="13" stroke="#ff6961" fill="#ff6961"/>
+</svg>

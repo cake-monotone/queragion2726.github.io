@@ -27,6 +27,10 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   mail: 'mailto:queragion2726@gmail.com'
   github: 'https://github.com/queragion2726'
 
+SNS-extra-icon: # If there's no icon on iconfont, you can add custom icon
+  boj: 'https://www.acmicpc.net/user/cake_monotone'
+  codeforces: 'https://codeforces.com/profile/queragion2726'
+
 # 分页
 paginate: 2
 paginatepath: ['page:num']

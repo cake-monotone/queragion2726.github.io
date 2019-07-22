@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 프로필 
-page-title: aboutMe
-home-title: Show you about me.
+page-title: Profile 
+home-title: 
 description:
 ---
 
@@ -22,18 +22,23 @@ description:
         {% endif %}
         {% if site.SNS %}
           {% for sns-icon in site.SNS-icon %}
-            <a href="{{ sns-icon[1] }}" title="{{ sns-icon[0] }}">
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-{{ sns-icon[0] }}"></use>
-              </svg>
-            </a>
+              <a href="{{ sns-icon[1] }}" title="{{ sns-icon[0] }}">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-{{ sns-icon[0] }}"></use>
+                </svg>
+              </a>
           {% endfor%}
+          {% for sns-icon in site.SNS-extra-icon %}
+            <a href="{{ sns-icon[1] }}" title="{{ sns-icon[0] }}" >
+              <img src="/assets/extra-icon/{{ sns-icon[0] }}.svg" class="icon" aria-hidden="true"/>
+            </a>
+          {% endfor %}
         {% endif %}
       </li>
       <li class="fadeInUp animated">
       {% if site.tags.size>0 %}
           {% for tag in site.tags %}
-          <a href="tags.html#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+          <a href="tags.html#{{ tag[0] }}" class="tag">{{ tag[0] }}</a>
           {% endfor %}
       {% endif %}
       </li>
