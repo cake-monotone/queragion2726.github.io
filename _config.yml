@@ -19,7 +19,7 @@ webtitle: 'mono-cake & coffee'
 bio: 'bio'
 about: true
 aboutyou: 'introduction'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+portraits: '/assets/profile.jpg' # your portraits image file path
 
 # SNS
 SNS: true
