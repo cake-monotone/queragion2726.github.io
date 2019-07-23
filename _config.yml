@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'mono cake and coffee '
+title: 'mono-cake and coffee '
 description: 'not cake and coffee blog.. just blog about Programming and Mathmatics'
 keywords: 'PS, Programming, Math, Mathmatics'
 url: 'https://mono-cake.coffee' # your host
@@ -9,7 +9,7 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   Main: '/'
   Tags: '/tags.html'
   Timeline: '/timeline.html'
-  Profile: '/about.html'
+  Profile: '/profile.html'
 
 # 博主
 author: true
