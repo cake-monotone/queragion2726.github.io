@@ -3,7 +3,8 @@
 
 Powered by Jekyll.
 
-#Theme Info
+# Theme Info
+
 Jekyll theme - [HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll) 
 
 # License 
