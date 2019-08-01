@@ -3,10 +3,10 @@
 
 Powered by Jekyll.
 
-# Theme Info
+## Theme Info
 
 Jekyll theme - [HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll) 
 
-# License 
+## License 
 
 [MIT](https://github.com/queragion2726/queragion2726.github.io/blob/master/LICENSE).
