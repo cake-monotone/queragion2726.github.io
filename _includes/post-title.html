@@ -55,10 +55,10 @@
   <div class="left-area">
     {% if page.next.url %}
       <a href="{{ page.next.url }}" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='{{ page.color }}';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
-      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:{{ page.color }};"><sapn class="main">{{ page.next.title }}</sapn></span></div>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:{{ page.color }};"><span class="main">{{ page.next.title }}</span></span></div>
     {% else %}
       <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='{{ page.color }}';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
-      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:{{ page.color }};"><sapn class="main">没有上一页咯</sapn></span></div>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:{{ page.color }};"><span class="main">이전 페이지가 없습니다.</span></span></div>
     {% endif %}
   </div>
   <div class="post-titlearea">
@@ -70,10 +70,10 @@
   <div class="right-area">
     {% if page.previous.url %}
       <a href="{{ page.previous.url }}" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='{{ page.color }}';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
-      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:{{ page.color }};"><sapn class="main">{{ page.previous.title }}</sapn></span></div>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:{{ page.color }};"><span class="main">{{ page.previous.title }}</span></span></div>
     {% else %}
       <a href="javascript:;" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='{{ page.color }}';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
-      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:{{ page.color }};"><sapn class="main">没有下一页咯</sapn></span></div>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:{{ page.color }};"><span class="main">다음 페이지가 없습니다.</span></span></div>
     {% endif %}
   </div>
 
