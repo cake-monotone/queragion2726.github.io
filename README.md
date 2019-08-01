@@ -1,7 +1,10 @@
 # Monotone-cake & Coffee Blog
 (https://mono-cake.coffee)
 
-This blog uses jekyll theme "[HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll)"
+Powered by Jekyll.
+
+#Theme Info
+Jekyll theme - [HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll) 
 
 # License 
 
