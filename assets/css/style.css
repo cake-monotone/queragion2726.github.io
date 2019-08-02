@@ -816,7 +816,7 @@ a{
 	right:12px;
 	bottom:10%;
 	z-index: 999;
-  border: 1px solid #333;
+  border: 1px solid #d2d2d2;
   border-radius: 7px;
 }
 .box a{
@@ -832,7 +832,7 @@ a{
   font-weight: bold;
 }
 .gototop{
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #d2d2d2;
 }
 .gototop,.gotobottom{
   display: block;
