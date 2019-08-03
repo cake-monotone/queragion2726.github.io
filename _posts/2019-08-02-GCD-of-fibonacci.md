@@ -52,34 +52,52 @@ $$(A \times B, C) = (A, C)$$
 
 ## 증명
 
-### 1.
+### Thm 1.
+
+<div style="font-size: 133%;">
+$$(F_i, F_{i+1}) = 1$$
+</div>
+
 먼저 $$(F_i, F_{i+1})$$를 살펴보자.
 
 lemma 1을 사용하면 i값 상관 없이 $$F_i$$와 $$F_{i+1}$$ 이 서로소라는 것을 알 수 있다.
 
 $$ 
-\begin{align}
-\begin{split}
-(F_{i+1}, F_i)  & = (F_i + F_{i-1}, F_i) \\
+\begin{array}{rl}
+(F_{i+1}, F_{i})  & = (F_{i} + F_{i-1}, F_i) \\
                 & = (F_i, F_{i-1}) \\
+                & \dots \\
                 & = (F_2, F_1) \\
+                & = (1, 1) \\
                 & = 1 \\
-\end{split}
-\end{align} $$
+\end{array} 
+$$
 
-### 2.
+### Thm 2.
 
-$$(F_i, F_{i+1}) = 1$$ 는 머릿속에 잠시 저장해놓고, 이번에는 좀더 확장시켜서 생각해보자.
+$$i \leq j$$ 를 만족하는, 양의 정수 i, j 에 대해서 다음을 만족한다.
+
+<div style="font-size: 133%;">
+$$(F_i, F_j) = (F_{i-j}, F_j)$$
+</div>
+
+이번에는 좀더 확장시켜서 생각해보자.
 
 $$(F_{i+k}, F_i)$$를 lemma 2를 사용해 전개한다.
 
 $$(F_{i+k}, F_i) = (F_{k-1} F_i + F_{k} F_{i+1}, F_i)$$
 
 
+$$
+\begin{array}{rll}
+(F_{k-1} F_i + F_{k} F_{i+1}, F_i) &= (F_{k} F_{i+1}, F_i) & \text{from lemma1} \\
+                                   &= (F_{k}, F_i) & \text{from Thm1, lemma3} \\
+\end{array}
+$$
 
-$$F_{k-1} F_i $$ 는 $$F_i$$의 배수다. lemma 1을 활용해 지워버리자.
+$$F_{k-1} F_i $$ 는 $$F_i$$의 배수이므로, lemma 1을 활용해 지워버릴 수 있다.
 
-또한 $$F_i와 F_{i+1}$$ 은 서로소다. $$F_{k} F_{i+1}$$ 부분도 lemma 3를 활용해 $$F_{k}$$ 로 줄일 수 있다.
+Thm1을 기억하자. $$F_i와 F_{i+1}$$ 은 서로소다. $$F_{k} F_{i+1}$$ 도 lemma 3를 활용해 $$F_{k}$$ 로 줄일 수 있다.
 
 결국 다음과 같은 깔끔한 식을 얻는다.
 
@@ -89,7 +107,11 @@ $$ \iff $$
 
 $$(F_{j}, F_i) = (F_{j-i}, F_i)$$
 
-### 3.
+### Thm 3.
+
+<div style="font-size: 133%;">
+$$(F_{i}, F_{j}) = F_{(i, j)}$$
+</div>
 
 필요한 것들은 모두 얻었다.
 
