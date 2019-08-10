@@ -2,7 +2,8 @@
 layout: post
 title: "피보나치수의 최대공약수"
 date: 2019-08-02 01:21
-tags: Fibonacci Math NumberTheory
+tags: [Fibonacci, Math, NumberTheory]
+category: [math, fibonacci]
 color: "#3FB488"
 cover: 
 subtitle: 
@@ -58,6 +59,8 @@ $$(A \times B, C) = (A, C)$$
 $$(F_i, F_{i+1}) = 1$$
 </div>
 
+---
+
 먼저 $$(F_i, F_{i+1})$$를 살펴보자.
 
 lemma 1을 사용하면 i값 상관 없이 $$F_i$$와 $$F_{i+1}$$ 이 서로소라는 것을 알 수 있다.
@@ -80,6 +83,8 @@ $$i \leq j$$ 를 만족하는, 양의 정수 i, j 에 대해서 다음을 만족
 <div style="font-size: 133%;">
 $$(F_i, F_j) = (F_{i-j}, F_j)$$
 </div>
+
+---
 
 이번에는 좀더 확장시켜서 생각해보자.
 
@@ -112,6 +117,8 @@ $$(F_{j}, F_i) = (F_{j-i}, F_i)$$
 <div style="font-size: 133%;">
 $$(F_{i}, F_{j}) = F_{(i, j)}$$
 </div>
+
+---
 
 필요한 것들은 모두 얻었다.
 
