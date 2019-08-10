@@ -698,7 +698,7 @@ a{
   animation-fill-mode: both;
 }
 
-.post-titlearea span:first-child{
+.post-titlearea h1{
     width: auto;
     height: auto;
     display: block;
@@ -708,59 +708,11 @@ a{
     left: 0;
     right: 0;
     margin: 0 auto;
-    font-size: 45px;
-    font-weight: 550;
+    font-size: 58px;
+    font-weight: bold;
     color: white;
-    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-family: "Noto Sans Kr", "Arial", sans-serif;
     /*font-family: 'Kaushan Script', cursive;*/
-}
-.post-titlearea span:nth-child(2){
-    display: block;
-    width: auto;
-    height: auto;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    font-weight: normal;
-    color: white;
-    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
-    /*font-family: 'Ubuntu', sans-serif;*/
-    top: 280px;
-    font-size: 25px;
-}
-.post-titlearea span:nth-child(3){
-    display: block;
-    width: auto;
-    height: auto;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    font-weight: normal;
-    color: white;
-    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
-    /*font-family: 'Ubuntu', sans-serif;*/
-    top: 330px;
-    font-size: 25px;
-}
-.post-titlearea span:nth-child(4){
-    display: block;
-    width: auto;
-    height: auto;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    font-weight: normal;
-    color: white;
-    /*font-family: 'Ubuntu', sans-serif;*/
-    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
-    top: 350px;
-    font-size: 25px;
 }
 .post-titlearea{
   position: absolute;
@@ -773,7 +725,7 @@ a{
 }
 .post-changearea{
   width: 100%;
-  height: 100px;
+  height: 80px;
   /*background-color: black;*/
   position: absolute;
   bottom: 0;
@@ -801,7 +753,8 @@ a{
   width: 90%;
   height: 80px;
   margin: 10px 5%;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   color: #555;
   text-align: center;
   overflow: hidden;

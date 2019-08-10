@@ -32,12 +32,14 @@
   .post-top{
     height: 395px;
   }
-  .post-titlearea span:first-child{
+
+  .post-titlearea h1{
     top: 40px;
-    font-size: 28px;
-    font-weight: 450;
+    font-size: 32px;
+    font-weight: bold;
     width: 95%;
   }
+  /*
   .top span:nth-child(2){
       top: 260px;
       font-size: 18px;
@@ -49,7 +51,7 @@
   .top span:nth-child(4){
       top: 350px;
       font-size: 18px;
-  }
+  }*/
   .post-list li,.tags-list li,.ex-list li{
       width: 90%;
       height: auto;
