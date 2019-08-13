@@ -3,7 +3,7 @@ layout: post
 title: "[BOJ 17372] 피보나치 수의 최대공약수의 합"
 date: 2019-08-13 20:00
 tags: [ Fibonacci, Math, Number Theory, BOJ ]
-category: [PS, BOJ]
+category: [ps, boj]
 color: "RGB(136,133,164)"
 cover: 
 subtitle: "BOJ 17372"

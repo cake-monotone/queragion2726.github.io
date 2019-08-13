@@ -2,7 +2,7 @@
 layout: post
 title: "피보나치수의 최대공약수"
 date: 2019-08-02 01:21
-tags: [Fibonacci, Math, NumberTheory]
+tags: [Fibonacci, Math, Number Theory]
 category: [math, fibonacci]
 color: "#3FB488"
 cover: 
