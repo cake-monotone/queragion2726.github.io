@@ -80,14 +80,14 @@
   <!-- 页面宽度小于800px -->
   <div class="post-changearea">
     {% if page.next.url %}
-      <a href="{{ page.next.url }}" class="leftchange" style="border-right: 1px solid {{ page.color }};border-bottom: 2px solid {{ page.color }};"><span>이전 페이지<br><br>{{ page.next.title }}</span></a>
+      <a href="{{ page.next.url }}" class="leftchange" style="border-right: 1px solid {{ page.color }};border-bottom: 2px solid {{ page.color }};"><span>이전 글 : {{ page.next.title }}</span></a>
     {% else %}
-      <a href="javascript:;" class="leftchange" style="border-right: 1px solid {{ page.color }};border-bottom: 2px solid {{ page.color }};"><span><br>이전 페이지가 없습니다</span></a>
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid {{ page.color }};border-bottom: 2px solid {{ page.color }};"><span>이전 페이지가 없습니다</span></a>
     {% endif %}
     {% if page.previous.url %}
-      <a href="{{ page.previous.url }}" class="rightchange" style="border-left: 1px solid {{ page.color }};border-bottom: 2px solid {{ page.color }};"><span>다음 페이지<br><br>{{ page.previous.title }}</span></a>
+      <a href="{{ page.previous.url }}" class="rightchange" style="border-left: 1px solid {{ page.color }};border-bottom: 2px solid {{ page.color }};"><span>다음 글 : {{ page.previous.title }}</span></a>
     {% else %}
-      <a href="javascript:;" class="rightchange" style="border-left: 1px solid {{ page.color }};border-bottom: 2px solid {{ page.color }};"><span><br>다음 페이지가 없습니다</span></a>
+      <a href="javascript:;" class="rightchange" style="border-left: 1px solid {{ page.color }};border-bottom: 2px solid {{ page.color }};"><span>다음 페이지가 없습니다</span></a>
     {% endif %}
   </div>
 </div>

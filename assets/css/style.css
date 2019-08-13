@@ -725,16 +725,17 @@ a{
 }
 .post-changearea{
   width: 100%;
-  height: 80px;
+  height: 40px;
   /*background-color: black;*/
   position: absolute;
   bottom: 0;
   display: none;
 }
 .leftchange,.rightchange{
-  display: block;
-  float: left;
-  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  /*float: left;
+  width: 50%;*/
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -751,8 +752,8 @@ a{
 .leftchange span,.rightchange span{
   display: block;
   width: 90%;
-  height: 80px;
-  margin: 10px 5%;
+  /*height: 80px;*/
+  margin: 15px 5%;
   font-size: 16px;
   font-weight: bold;
   color: #555;
