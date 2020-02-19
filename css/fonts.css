@@ -1,0 +1,10 @@
+/*-- import 'Do Hyeon' --*/
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap&subset=korean');
+
+@font-face {
+    font-family:  "Noto Sans Kr";
+    src: url("../fonts/NotoSans/NotoSans-Regular.woff2") format("woff2"),
+         url("../fonts/NotoSans/NotoSans-Regular.woff") format("woff"),
+         url("../fonts/NotoSans/NotoSans-Regular.ttf") format("truetype"),
+         url("../fonts/NotoSans/NotoSans-Regular.eot") format("embedded-opentype");
+}

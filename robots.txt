@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://mono-cake.coffee/sitemap.xml
