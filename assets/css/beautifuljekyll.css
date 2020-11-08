@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Times New Roman', serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
@@ -26,12 +26,15 @@ p {
   margin: 1.875rem 0;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: 'Do Hyeon', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: lighter;
   line-height: 1.1;
 }
 h1 {
   font-size: 2.25rem;
+  border-bottom-color: #808080;
+  border-bottom-width: 2px;
+  border-bottom-style: dashed;
 }
 h2 {
   font-size: 1.875rem;
@@ -175,7 +178,7 @@ img {
 
 .navbar-custom .navbar-nav .nav-item {
   text-transform: uppercase;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   letter-spacing: 0.0625rem;
 }
 
@@ -189,7 +192,7 @@ img {
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-  font-weight: 800;
+  font-weight: 600;
   color: {{ site.navbar-text-col | default: "#404040" }};
 }
 
@@ -455,6 +458,7 @@ footer .footer-custom-content {
 
 .post-preview .post-title {
   font-size: 1.875rem;
+  font-weight: lighter;
   margin-top: 0;
 }
 .post-preview .post-subtitle {
@@ -652,10 +656,14 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 3.125rem;
+  font-weight: lighter;
+  border: none;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
   font-size: 2.1875rem;
+  font-weight: lighter;
+  border: none;
 }
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
@@ -704,10 +712,10 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
     padding: 9.375rem 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .intro-header .post-heading h1 {
-    font-size: 3.125rem;
+    font-size: 3rem;
   }
   .intro-header.big-img .img-desc {
     font-size: 0.875rem;
@@ -971,10 +979,12 @@ pre {
 }
 
 .blog-post hr {
-  max-width: 25%;
-  border-width: 0.25rem;
-  border-radius: 0.1875rem;
-  border-color: #808080;
+  max-width: 80%;
+  border-top-width: 2px;
+  border-top-color: #808080;
+  border-top-style: dashed;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .blog-post blockquote {
@@ -991,4 +1001,15 @@ pre {
 .center {
   display: block;
   margin: 0 auto;
+}
+
+.MathJax_Display {
+    display:flex;
+    padding:0.5em;
+    overflow-x:auto;
+    box-sizing:border-box;
+}
+.MathJax_Display .MathJax {
+    display:inline-block;
+    width:100%;
 }
