@@ -40,7 +40,7 @@ round-avatar: true
 social-network-links:
   email: "cake.monotone@gmail.com"
 #  facebook: deanattali
-  github: queragion2726
+  github: cake-monotone 
 #  twitter: daattali
 #  reddit: yourname
 #  linkedin: daattali
@@ -62,7 +62,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: monotone cake and coffee
 
 # --- General options --- #
 
