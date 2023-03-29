@@ -1,8 +1,9 @@
 ---
-layout: post
 title: 피보나치 수를 계산하는 21가지 방법
-subtitle: 
 tags: [ Math, Fibonacci ]
+category: math
+date: 2020-03-28 00:00:00 +0900
+lng_pair: id_fibo_calc
 ---
 
 피보나치 수를 정말 여러가지 방법으로 계산해보자.
@@ -41,29 +42,13 @@ def fibo(N):
     M = np.linalg.matrix_power(M, N)
     return M[1][0]
 ```
+
 > 시간복잡도: $O(log N)$ (power 함수에 분할정복을 사용했을 경우)
 
-$$
-{
-    \begin{pmatrix}
-        f_{N+1} \\
-        f_N \\
-    \end{pmatrix}
-}
-=
-{
-    \begin{pmatrix}
-        1 & 1 \\
-        1 & 0 \\
-    \end{pmatrix}
-}^N
-{
-    \begin{pmatrix}
-        f_1 \\
-        f_0 \\
-    \end{pmatrix}
-}
-$$
+# $$ { \begin{pmatrix} f_{N+1} \\ f_N \\ \end{pmatrix} }
+
+{ \begin{pmatrix} 1 & 1 \\ 1 & 0 \\ \end{pmatrix} }^N { \begin{pmatrix} f_1 \\
+f_0 \\ \end{pmatrix} } $$
 
 # 4. 피보나치 수열의 일반항
 
@@ -74,37 +59,16 @@ def fibo(N):
     Phi = (1 - sqrt5) / 2
     return int((phi**N - Phi**N) / sqrt5)
 ```
-> 시간 복잡도 $O(log N)$ (power 함수에 분할정복 사용시) 
 
-$$
-f_N = {
-    {
-        \phi ^N - \Phi ^N
-    }
-    \over
-    {
-        \sqrt{5}
-    }
-}
-,
-\left(
-    \phi = {
-        {1 + \sqrt{5}}
-        \over
-        {2}
-    }
-    ,
-    \Phi = - {
-        1
-        \over
-        \phi
-    }
-\right)
-$$
+> 시간 복잡도 $O(log N)$ (power 함수에 분할정복 사용시)
+
+$$ f_N = { { \phi ^N - \Phi ^N } \over { \sqrt{5} } } , \left( \phi = { {1 +
+\sqrt{5}} \over {2} } , \Phi = - { 1 \over \phi } \right) $$
 
 $\phi$ 는 흔히 말하는 황금비
 
-다만 이 방법은 실수 연산을 사용하기 때문에, N이 커지면 커질 수록 실수오차가 불어나 사용할 수 없다.
+다만 이 방법은 실수 연산을 사용하기 때문에, N이 커지면 커질 수록 실수오차가
+불어나 사용할 수 없다.
 
 # 5. 피보나치 수열의 일반항 2
 
@@ -150,14 +114,14 @@ def fibo(N, P):
 
 > 시간복잡도 $O(log N)$
 
-조금 복잡해보이지만, 결국 하고 있는 계산은 피보나치 수열의 일반항 1과 크게 다르지 않다.
+조금 복잡해보이지만, 결국 하고 있는 계산은 피보나치 수열의 일반항 1과 크게
+다르지 않다.
 
-실수 대신, `(a, b)` 꼴로 된 정수 튜플을 사용하는데, 사실상 $a + b \sqrt{5}$와 같다고 보면 된다. 따라서 튜플끼리의 곱하기는 다음과 같다는 걸 알 수 있다.
+실수 대신, `(a, b)` 꼴로 된 정수 튜플을 사용하는데, 사실상 $a + b \sqrt{5}$와
+같다고 보면 된다. 따라서 튜플끼리의 곱하기는 다음과 같다는 걸 알 수 있다.
 
-$$
-(a, b) \times (c, d) = (ac+5bd, ad+bc) \\
-(a+b\sqrt{5}) \times (c+d\sqrt{5})=(ac+5bd) + (ad+bc) \sqrt{5} \\
-$$
+$$ (a, b) \times (c, d) = (ac+5bd, ad+bc) \\ (a+b\sqrt{5}) \times
+(c+d\sqrt{5})=(ac+5bd) + (ad+bc) \sqrt{5} \\ $$
 
 나머지 과정은 피보나치 수열의 일반항 1과 같다.
 
@@ -174,13 +138,11 @@ def fibo(N):
     return int(ret)
 ```
 
-> 시간복잡도 $O(N)$ 
-> 
+> 시간복잡도 $O(N)$
+>
 > cos 함수를 $O(1)$ 이라 가정
 
-$$
-f_N = \prod_{k=1}^{\lfloor (n-1)/2 \rfloor} (1 + 4\ \cos^2{k\pi \over n})
-$$
+$$ f_N = \prod_{k=1}^{\lfloor (n-1)/2 \rfloor} (1 + 4\ \cos^2{k\pi \over n}) $$
 
 이 역시 실수 연산을 사용하므로, 오차가 발생한다.
 
@@ -188,13 +150,8 @@ $$
 
 ## 피보나치 수 판정법
 
-$$
-x \text{는 피보나치 수} 
-\\
-\iff
-\\
-5x^2 + 4 \text{ 혹은 } 5x^2 - 4 \text{가 완전 제곱수}
-$$
+$$ x \text{는 피보나치 수} \\ \iff \\ 5x^2 + 4 \text{ 혹은 } 5x^2 - 4 \text{가
+완전 제곱수} $$
 
 Ex) $5 \times 3^2 + 4 = 49$가 완전 제곱수이므로 3은 피보나치수
 
@@ -202,19 +159,16 @@ Ex) $5 \times 3^2 + 4 = 49$가 완전 제곱수이므로 3은 피보나치수
 
 위에서 언급한 피보나치의 일반항을 잘 조작하면 다음과 같은 결과를 얻는다.
 
-$$
-n = log_{\phi} \big\{ {f_n \sqrt{5} + \sqrt{5f_n^2 \pm 4} \over 2} \big\}
-$$
+$$ n = log_{\phi} \big\{ {f_n \sqrt{5} + \sqrt{5f_n^2 \pm 4} \over 2} \big\} $$
 
 여기서 $5f_n^2 \pm 4$는 정수여야 한다.
 
 Ex) 4번째 피보나치 수 3을 넣어보면 다음을 만족한다.
 
-$$
-log_\phi \big({7+3\sqrt{5} \over 2} \big) = 4
-$$
+$$ log_\phi \big({7+3\sqrt{5} \over 2} \big) = 4 $$
 
-이제부터 하려는 작업은 간단하다! n번째 피보나치 수가 나올 때까지 랜덤한 수를 뽑고 확인하고, 뽑고 확인하고 하자.
+이제부터 하려는 작업은 간단하다! n번째 피보나치 수가 나올 때까지 랜덤한 수를
+뽑고 확인하고, 뽑고 확인하고 하자.
 
 ```py
 import random
@@ -268,11 +222,11 @@ def fibo(N, max_lim = 10000):
 
 평균적인 시간복잡도는 기하분포의 평균을 이용해 예상할 수 있다.
 
-$$
-O(MAX\_LIM) = O(f_n)
-$$
+$$ O(MAX\_LIM) = O(f_n) $$
 
-비단 바보같아 보이는 방법이고 영원히 헤맬것 같은 방법이지만, 나름 합리적인🙄🙄 시간복잡도로 피보나치 수를 구할 수 있다. 다만 소수 오차가 생길 수 있음에 유의하자
+비단 바보같아 보이는 방법이고 영원히 헤맬것 같은 방법이지만, 나름 합리적인🙄🙄
+시간복잡도로 피보나치 수를 구할 수 있다. 다만 소수 오차가 생길 수 있음에
+유의하자
 
 # 8. 7번 최적화
 
