@@ -30,7 +30,7 @@ excerpt_start_separator: <!-- outline-start -->
 thumbnail_img: true
 
 # in Blog page, if thumbnail_img is true and if no picture is provided for thumbnail, this fills with empty picture for clean look
-thumbnail_img_fill: true
+thumbnail_img_fill: false 
 
 ###########################################################
 #                Post Query

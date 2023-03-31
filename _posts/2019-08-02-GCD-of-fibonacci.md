@@ -4,6 +4,7 @@ date: 2019-08-02 01:21:00 +0900
 tags: [Fibonacci, Math, Number Theory]
 category: math
 lng_pair: id_gcd_fibo
+publish: false
 ---
 
 피보나치수의 최대공약수를 생각해보자.

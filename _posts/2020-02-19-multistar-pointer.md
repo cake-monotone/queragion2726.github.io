@@ -145,8 +145,8 @@ auto foo (T a) -> decltype(a+1LL) {
 
 대략적으로 이렇게 계획을 세워 볼 수 있다.
 
-1. T******... 를 반환하는 함수 foo 만들기
-2. using type = decltype(foo); 으로 사용하기 편하게 만들기
+1. 템플릿 메타 프로그래밍으로 T******... 를 반환하는 함수 foo 만들기
+2. using type = decltype(foo()); 으로 사용하기 편하게 만들기
 
 위에서 설명한 문법들을 활용하면 충분히 만들 수 있다.
 
@@ -183,7 +183,7 @@ return 타입을 결정하기 위해서는 어떻게 해야할까?
 `decltype(multistar_pointer<T,D-1>::compile())*`에 우리가 원하는 결과가 담길
 것이다.
 
-필요한 `decltype(multistar_pointer<T, D>::compile)`이 너무 길어서 매크로를
+이 코드에서는 필요한 `decltype(multistar_pointer<T, D>::compile)`이 너무 길어서 매크로를
 정의하고 사용하였다.
 
 ```cpp
@@ -208,6 +208,4 @@ int main(void) {
 
 ![결과물 사진 int***...*** 1000개](:multistarpointer2.png)
 
-이게 왜 필요한지 묻지 마세요..
-
-[다차원 자료구조](https://github.com/queragion2726/HyperDataStructure)
+이게 왜 필요한지 묻지 마세요... 저도 모르겠어요

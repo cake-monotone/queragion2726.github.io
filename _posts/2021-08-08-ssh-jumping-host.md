@@ -8,7 +8,7 @@ lng_pair: id_ssh_J
 
 # 특정 서버를 경유해서 ssh 사용하기
 
-살다보면 "외부 네트워크에서 곧바로 접근할 수 없는 서버"에 ssh로 접근하고 싶은
+인생을 살다보면 "외부 네트워크에서 곧바로 접근할 수 없는 서버"에 ssh로 접근하고 싶은
 일이 생깁니다.
 
 더 정확히는 "내부 네트워크와 연결되어 있으나, 외부에서 접근하기 위해서는 내부
@@ -58,7 +58,7 @@ ssh key 인증과 마찬가지로, jump server에 따로 config를 설정해야 
 
 - scp를 사용하기 까다롭습니다.
 
-파일을 jump server에 노출해야합니다. 마찬가지로 파일이 노출되는 문제가 있습니다.
+파일을 jump server에 노출해야합니다. 누가 보면 어떡하나요!
 
 # ssh -J
 
@@ -69,8 +69,8 @@ ssh -J user1@jumpserver:port user2@remoteserver:port
 ```
 
 위 명령어로 jump server를 경유해 remote server에 바로 접근할 수 있습니다. 정말
-별다른 수고로움 없이, ssh서버만 작동하고 있다면 이 간편한 기능을 사용할 수
-있는거죠. (단, ssh 서버측 설정으로 제한 가능)
+별다른 수고로움 없이, jump server의 ssh만 잘 작동하고 있다면 이 간편한 기능을 사용할 수
+있는거죠. (단, jump server의 ssh 설정으로 제한 가능)
 
 # ssh config로 간편하게 설정하기
 
@@ -126,7 +126,7 @@ scp ~/my_file remote-server:/home/user2/my_file
 사실 -J 옵션과 `ProxyJump`는 선후관계가 역전되었는데요. `ProxyJump`이 원형이고,
 -J 옵션이 그 `ProxyJump` shortcut입니다.
 [man 페이지 참조](https://man.openbsd.org/ssh#J){:target="_blank"} 따라서 -J
-옵션은 조금 사용성이 제한된 느낌이 있습니다. (-i 옵션을 J안에 줄 수 있는 방법이
+옵션은 조금 사용성이 제한된 느낌이 있습니다. (ex. -i 옵션을 J안에 줄 수 있는 방법이
 없습니다)
 
 추가로 이 밖에도, 생각보다 ssh가 지원하는 기능이 많습니다.
