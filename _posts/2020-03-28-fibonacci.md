@@ -1,5 +1,5 @@
 ---
-title: 피보나치 수를 계산하는 21가지 방법
+title: 피보나치 수를 계산하는 7가지 방법
 tags: [ Math, Fibonacci ]
 category: math
 date: 2020-03-28 00:00:00 +0900
@@ -47,7 +47,7 @@ def fibo(N):
 
 # $$ { \begin{pmatrix} f_{N+1} \\ f_N \\ \end{pmatrix} }
 
-{ \begin{pmatrix} 1 & 1 \\ 1 & 0 \\ \end{pmatrix} }^N { \begin{pmatrix} f_1 \\
+$${ \begin{pmatrix} 1 & 1 \\ 1 & 0 \\ \end{pmatrix} }^N { \begin{pmatrix} f_1 \\
 f_0 \\ \end{pmatrix} } $$
 
 # 4. 피보나치 수열의 일반항
