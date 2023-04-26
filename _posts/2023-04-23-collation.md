@@ -1,12 +1,12 @@
 ---
-title: 다양한 나라에서 문자열을 정렬하려면? Collation이란?
+title: 문자열들을 자연스럽게 정렬하려면? Collation이 필요한 이유
 tags: [ project, postgresql, collation ]
 category: programming
 date: 2023-04-23 15:47:02 +0900
 lng_pair: id_collation
 ---
 
-# 문자열 정렬의 어려움
+# 자연스러운 문자열 정렬의 어려움
 
 정렬은 컴퓨터 공학도라면 누구라도 알고 있는 친숙한 문제입니다. 컴퓨터 공학도가
 아니더라도 국어사전, ㄱㄴㄷ정렬 등으로 익숙하게 느끼는 분들도 많을 겁니다.
@@ -163,8 +163,7 @@ SELECT full_name FROM account ORDER BY (full_name COLLATE "ko_KR") DESC
 ```
 
 하지만 이 방법은 Index의 도움을 받을 수가 없으므로 (다른 collation이 적용된 index는
-사용할 수 없으므로), 느린 속도는 각오해야 합니다. 그렇기 때문에 성능을 중요시하는 경우에는
-테이블 생성 시 Collation을 지정하는 것이 좋습니다
+사용할 수 없으므로), 느린 속도는 각오해야 합니다. 그렇기 때문에 성능이 필요한 경우  
 
 # 마치며
 
@@ -175,10 +174,10 @@ Collation에 대한 이해도 중요하지만, 좀 더 많은 개발자들이 �
 
 # 여담
 
-북한의 자모음 순서가 ICU Collation에 반영되지 않았다는 것은 흥미롭습니다. 북한용
-프로그램을 만드려면 아무래도 직접 구현해야 할 것 같네요.
+아쉽게도 북한의 자모음 순서는 ICU Collation에도 반영되지 않았습니다. 북한 용
+프로그램을 만드려면 아무래도 collation을 직접 구현해야 할 것 같네요.
 
-네이버 라오어 사전이 라오어 합자를 제대로 지원하지 않는다는 것도 흥미로운 사실입니다. 
+우연히 발견했는데 네이버 라오어 사전은 아직 라오어 합자를 제대로 지원하지 않는 것으로 보입니다. 
 합자와 분리자가 전혀 다른 검색결과를 보여줍니다.
 
-PostgreSQL의 Collation이 OS에 의존적이기 때문에 개발 과정에서 혼란을 야기할 수 있습니다. 개발환경과 프로덕션 환경의 차이로 인해 Collation 설정이 달라지는 경우도 있을 것입니다. 이러한 문제를 해결하려면, 초기 세팅시 Collation을 잘 고려해야합니다. 특히 Windows를 사용하는 Azure 클라우드를 사용할 때 조심해야합니다. 최근에는 개선이 되기는 했는데, 예전 Azure PostgreSQL을 사용할 때는 "English_Unite States.1254" 같은 이상한 윈도우 locale을 볼 수 있었습니다.
+PostgreSQL의 Collation이 OS에 의존적이기 때문에 개발 과정에서 혼란을 야기할 수 있습니다. 개발환경과 프로덕션 환경의 OS 차이로 인해 Collation 설정이 달라지는 경우가 꽤 있습니다. 이러한 문제를 해결하려면, 초기 세팅시 Collation을 잘 고려해야합니다. 특히 Windows를 사용하는 Azure 클라우드를 사용할 때 조심해야합니다. 최근에는 개선이 되기는 했는데, 예전 Azure PostgreSQL을 사용할 때는 "English_Unite States.1252" 같은 윈도우 locale을 볼 수 있었습니다.
