@@ -82,7 +82,7 @@ search_disable_auto_search: true
 # to disable auto complete for search box
 # since search bar uses dropdown list style.
 # when auto_search is enabled, browsers auto complete box overlaps search result.
-search_disable_auto_complete: true
+search_disable_auto_complete: false
 
 # search with uri parameter on page load
 # ex. https://your_github_user_name.github.io/?search="hello"
@@ -213,7 +213,7 @@ top_nav_brand_text_enable: true
 
 # set profile image
 # comment to disable the profile image
-side_nav_profile_img_path: /assets/img/posts/post_pic1.jpg
+side_nav_profile_img_path: /assets/img/default/20366872.jpg
 
 # this adds hover effect to bottom buttons
 side_nav_bottom_buttons_hover_effect: "hover-effect"
