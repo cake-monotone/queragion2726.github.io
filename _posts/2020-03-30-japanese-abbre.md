@@ -4,6 +4,7 @@ tags: [ Japanese ]
 date: 2020-03-30 00:00:00 +0900
 category: language
 lng_pair: id_common_jap
+published: false
 ---
 
 이 포스트는 평범한 일본어를 다루는게 아닌, 일상에서 사용되는 회화체, 줄임말 등을
